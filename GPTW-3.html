@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Index-GPTW-3-COPY</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  
+<style> /*------CSS Part-Starts-Here-------------------------*/
+
+:root{
+    --primary: rgb(1, 44, 118);
+    --blue: rgb(35, 107, 244);
+    --blue2: rgb(0, 41, 92);
+    --blue3: rgb(230, 237, 255);
+    --blue4: rgb(158, 191, 250);
+    --purple: rgb(100 82 243);
+    --purple2: rgb(77 59 181);
+    --purple3: rgb(204 196 250);
+    --tourquoise: rgb(92 236 211);
+    --tourquoise2: rgb(18 105 94);
+    --tourquoise3: rgb(163 245 232);
+    --black: rgb(0 0 0);
+    --metal: rgb(43, 58, 56);
+    --silver: rgb(187, 199, 204);
+    --gray: rgb(230, 236, 239);
+    --white-gray: rgb(251, 251, 251);
+    --white: rgb(255, 255, 255);
+    --links: rgb(85, 26, 139);
+    --red: rgb(255, 022, 040);
+}
+
+* {
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Figtree', sans-serif;
+  }
+
+  .container4{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+/*--------Header-Banner-------------------------------------------------*/
+
+.front{
+    display: grid;
+    min-height: 300px;
+    background-image: url("./images/bannerGPTW-1.png"); /*Local Link*/
+    /*background-image: url("https://ttectalent.stage.sumtotal.host/Core/8298.sumtfile"); /*STAGE link*/ 
+    background-repeat: no-repeat;
+    overflow: auto;
+  }
+
+  .front_title{
+    max-width: 1500px;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+
+
+  .front_text{
+    width: 85%;
+    color: var(--white);
+    margin-bottom: -30px;
+    font-size: large;
+}
+
+.back{
+  margin-bottom: 20px;
+}
+
+.btn_back{
+  display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    justify-content: left;
+    gap: .5em;
+    color: var(--white);
+    
+}
+
+.btn_back::before{
+  content: url("./images/backDSG.png"); /*Local link*/
+  /*content: url("https://ttectalent.sumtotal.host/Core/6322.sumtfile");*/ /*PROD link*/
+}
+
+.div__logo{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  justify-content: end;
+  margin-top: -150px;
+}
+
+/*--------CONT-TABS-BOX-IMAGE--------------------------------------------------*/
+
+.item1 { grid-area: image; }
+.item2 { grid-area: lista; }
+
+.grid-container {
+  display: grid;
+  
+    
+  gap: 1px;
+  background-color:rgb(240, 240, 240);
+  padding: 5px;
+}
+
+.grid-container > div {
+  text-align: left;
+  font-size: 15px;
+}
+
+.text1{
+  color: var(--blue);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.pinky{
+  text-align: end;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.cont_subtitle{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cont_title{
+  margin-left: 20px;
+}
+
+a{
+  color: var(--links);
+}
+
+.text2{
+  margin-left: 20px;
+  font-size: large;
+}
+
+.gallery_img{
+  width: 280px;
+  height: 238px;
+  margin: 0 auto;
+  object-fit: cover;
+  min-height: 250px;
+}
+
+.item2{
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+/*--------TABS-BARS-COLLAPSE--------------------------------------------------*/
+
+.collapsible {
+  background-color: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: large;
+  margin-top: 5px;
+}
+
+.active1, .collapsible:hover {
+  background-color: #cfcaca;
+  color: var(--primary);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: var(--white);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active1:after {  /* ---This code make appear a hyphen after de Tab name---*/
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.content-coll{
+  margin-top: 30px;
+}
+
+.coll-open{
+  display: block;
+}
+
+.stickout{
+  color: #1ac637;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.stickout2{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.box-link{
+  color: var(--links);
+}
+
+/*--------Lists Content---------------------------------------------------*/
+
+.div__lists{
+  margin-left: 10px;
+}
+
+.list-title{
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.list-circle{
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.list-square{
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.list-space{
+  margin-top: -30px;
+  padding-bottom: 10px;
+}
+
+/*--------TOP Button---------------------------------------------------*/
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--blue4);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: var(--blue4);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+/*--------Divider---------------------------------------------------*/
+
+/* dashed */
+hr.dashed {
+  border-top: 1px dashed #caccc9;
+  margin-top: 15px;
+}
+
+/* Solid */
+hr.solid {
+  border-top: 1px solid #caccc9;
+  margin-top: 15px;
+}
+
+/*--------Effects---------------------------------------------------*/
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*--------@medias---------------------------------------------------*/
+
+@media (max-width: 768px ){
+.div__logo{
+  margin-top: -160px;
+}
+.gallery_img{
+  width: 280px;
+  height: 238px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.item2{
+  margin-left: 250px;
+}
+.list-title{
+  font-size: 0.8rem;
+}
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-coll{
+  margin-top: -30px;
+}
+.grid-container > div {
+  margin: 20px auto;
+}
+}
+
+@media (max-width: 500px){
+  .front_text{
+    width: 75%;
+}
+.div__logo{
+  margin-top: -200px;
+}
+.item2{
+  margin-left: 150px;
+}
+}
+
+/*--------CSS Part Ends Here------------*/
+</style>
+
+</head>
+
+<!--------HTML----------------------------------------------------->
+
+  <body>
+
+<!--------Header Banner--------->
+
+<header class="front">
+  <div class="front_banner container4">
+
+    <div class="back">
+      <a class="btn_back" href="./index.html" target="_top">Back</a>
+    </div>
+    
+    <h1 class="front_title">Respect</h1>
+      <p class="front_text">Measures the extent to which employees feel respected by management. Measures the levels of support, collaboration, and caring employees perceive as the result of management’s action towards them.</p>
+
+    <div class="div__logo">
+      <img src="./images/Logo-GPTW-2.png" alt="Logo-GPTW-2.png" class="Logo-GPTW-2">
+    </div>
+    
+
+  </div>
+
+</header>
+
+<!--------TABS-BUTTONS----https://www.w3schools.com/howto/howto_js_tabs.asp----->
+
+<section class="tabs container4">
+
+<!--------CONT-TABS-BOX-IMAGE-------->
+
+<div id="one" class="tabcontent contentOne">    <!--------Tabs-1-------->
+
+  <div class="content-coll">   <!--------Collapse-----https://www.w3schools.com/howto/howto_js_collapsible.asp---->
+    
+<button class="collapsible">• Support and Collaboration</button> <!--------Collapse-1-------->
+<div class="content">
+  <div class="grid-container tab2">  
+    <div class="item1"><img src="./images/imgGPTW-9.png" class="gallery_img" alt="imgGPTW-9"></div>
+    <div class="item2">
+      <ul class="list-space">
+        <li class="list-title"><h2>Support and Collaboration</h2></li>
+          <ul>
+            <li class="list-circle">Provide workshops on career advancement, helping employees understand their development pathways.</li>
+              <ul>
+                <li class="list-square"><span class="bold">Support Document</span>: Skillsoft course on Career Planning – <span class="underline">Career Planning</span> (pes_3c623b30-e71c-11e6-9835-f723b46a2688)</li>
+              </ul>
+            <li class="list-circle">Facilitate joint projects between departments to build relationships and teamwork.</li>
+              <ul>
+                <li class="list-square"><span class="bold">Support Document</span>: Skillsoft course on Building and Leading Successful Teams – <span class="underline">Cultivating Cross-functional Team Collaboration</span> (pes_22a565a0-2cf3-11e8-b1ef-51537209d9f5) – Managing for Cross-functionality (pes_562a98ff-fea5-11e6-8638-0242c0a80b06)</li>
+              </ul>
+              <li class="list-circle">Implement a mentorship program pairing new employees with experienced ones.</li>
+              <ul>
+                <li class="list-square"><span class="bold">Support Document</span>: Job aid on “Mentorship Program Guidelines” – <span class="underline">Mentorship Program Job Aid</span></li>
+              </ul>      
+          </ul>
+      </ul>
+    </div>
+  </div>
+</div>  <!-------End-Collapse-1-------->
+
+<button class="collapsible">•	Recognition</button>  <!--------Collapse-2-------->
+<div class="content">
+  <div class="grid-container tab2">  
+    <div class="item1"><img src="./images/imgGPTW-9.png" class="gallery_img" alt="imgGPTW-9"></div>
+    <div class="item2">
+      <ul class="list-space">
+        <li class="list-title"><h2>Recognition</h2></li>
+          <ul>
+            <li class="list-circle">Send virtual thank-you cards to team members who have displayed exceptional performance.</li>
+              <ul>
+                <li class="list-square"><span class="bold">Support Document</span>: Job aid on “Creating Effective Recognition Programs” – <span class="underline">Global Recognition Tool</span></li>
+              </ul>
+            <li class="list-circle">Celebrate team member milestones during department meetings.</li>
+              <ul>
+                <li class="list-square"><span class="bold">Support Document</span>: Skillsoft course on Employee Recognition – <span class="underline">Expert Insights on Motivating People</span> (pes_2712fd81-05cd-11e7-b6c3-0242c0a80802)</li>
+              </ul>
+            <li class="list-circle">Establish a peer recognition program where employees can nominate each other for awards.</li>
+            <ul>
+              <li class="list-square"><span class="bold">Support Document</span>: Job aid on “Peer Recognition Program Setup” – <span class="underline">Give a Shout Out</span></li>
+            </ul>   
+          </ul>
+      </ul>
+    </div>
+  </div>
+</div>  <!-------End-Collapse-2-------->
+
+</div>
+  </div> <!-----End---Tabs-1-------->  
+
+
+</section> 
+
+
+<!--------Back to the Top Button-------->
+
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+<!-- Test the scroll -->
+<div style="height:50px;">
+
+
+<!--------------HTML-Ends-Here------------------>
+
+
+<!-------Java-Script-Tabs-------->
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-------Java-Script-Collapse-------->
+
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active1");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+  </script> 
+
+
+<!-------Java-Top Button-------->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                <script>
+                // ===== Scroll to Top ==== 
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 800);
+            });
+                </script>
+  
+
+  </body> 
+  
+</html>
+

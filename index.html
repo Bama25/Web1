@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index-GPTW-1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+<style>
+
+:root{
+    --primary: rgb(35, 107, 244);
+    --blue: rgb(35, 107, 244);
+    --blue1: rgb(1, 44, 118);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0 0 0);
+    --neutrals1: rgb(230, 236, 239);
+    --neutrals2: rgb(206, 206, 205);
+    --neutrals3: rgb(63, 87, 101);
+    --neutrals4: rgb(43, 58, 66);
+    --tourquoise: rgb(101, 255, 255);
+    --links: rgb(85, 26, 139);
+    --red: rgb(255, 022, 040);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    font-family: "Figtree", serif;
+    background-color: var(--blue1);
+}
+
+.container2{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1260px;
+    padding: 60px 0;
+    margin-top: 10px;
+}
+
+.grid{
+    background-image: url("./images/bg_main_GPTW-2.png"); /*Local Link*/
+    /*background-image: url("https://ttectalent.sumtotal.host/Core/6900.sumtfile");*/ /*PROD likn*/
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow: auto;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.front_text{
+    color: var(--white);
+    margin-bottom: -30px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.card-container{
+    display: flex ;
+    flex-direction: row;
+    justify-content:  space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card-title{
+    text-align: center;
+    line-height: 250px;
+    color: var(--blue1);
+    font-size: 1.8rem;
+    /* background-color: rgb(173, 211, 20); */
+    border-radius: 20px 20px 0 0;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.card-box1{
+    width: 300px;
+    height: 250px;
+    background-image: url(./images/imgGPTW-1a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--white); */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    animation-delay: 1s;
+}
+
+.card-box2{
+    width: 300px;
+    height: 250px;
+    background-image: url(./images/imgGPTW-2a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--white); */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    animation-delay: 1s;
+}
+
+.card-box3{
+    width: 300px;
+    height: 250px;
+    background-image: url(./images/imgGPTW-4a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--white); */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    animation-delay: 1s;
+}
+
+.card-box4{
+    width: 300px;
+    height: 250px;
+    background-image: url(./images/imgGPTW-8a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--white); */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    animation-delay: 1s;
+}
+
+.card-box5{
+    width: 300px;
+    height: 250px;
+    background-image: url(./images/imgGPTW-3a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: var(--white); */
+    border-radius: 20px;
+    margin-bottom: 50px;
+    animation-delay: 1s;
+}
+
+.card-box1:hover{
+    background-image: url(./images/imgGPTW-1-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card-box2:hover{
+    background-image: url(./images/imgGPTW-2-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card-box3:hover{
+    background-image: url(./images/imgGPTW-4-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card-box4:hover{
+    background-image: url(./images/imgGPTW-8-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card-box5:hover{
+    background-image: url(./images/imgGPTW-3-b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+
+.card-title:hover{
+    color: var(--white);
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="grid">
+
+    <header>
+        <div class="logo">
+        <img src="./images/Logo_GPTW-1.png" alt="Logo_GPTW-1.png">
+        <img src="./images/Logo-GPTW-2.png" alt="Logo_GPTW-2.png">
+        </div>
+    </header>
+
+    <div class="container2">
+
+        <p class="front_text animate__animated animate__fadeInUp">Maecenas nec eros massa. Nullam nec nunc malesuada, consequat lacus non, placerat magna. Integer facilisis orci risus, eu porttitor eros viverra vehicula. In nibh quam, cursus sed ante vel, laoreet mattis turpis. Etiam feugiat, lectus vitae dapibus lobortis, quam odio viverra erat, vitae elementum nunc odio id lectus. Sed id efficitur tellus, volutpat rutrum orci. Sed ut odio eu enim auctor aliquet vitae rutrum tellus. Pellentesque nec ultricies nibh.</p>
+    </div>
+
+    <section class="card-container">
+
+    <div class="card-img1">
+        <a href="./GPTW-2.html" class="card-link" target="_top"> 
+            <div class="card-box1 animate__animated animate__fadeInUp">
+            <h1 class="card-title">Credibility</h1>
+        </div></a>
+    </div>
+
+    <div class="card-img2">
+        <a href="./GPTW-3.html" class="card-link" target="_top">
+            <div class="card-box2 animate__animated animate__fadeInUp">
+            <h1 class="card-title">Respect</h1>
+        </div></a>
+    </div>
+
+    <div class="card-img3">
+        <a href="./GPTW-4.html" class="card-link" target="_top">
+            <div class="card-box3 animate__animated animate__fadeInUp">
+            <h1 class="card-title">Fairness</h1>
+        </div></a>
+    </div>
+
+    <div class="card-img4">
+        <a href="./GPTW-5.html" class="card-link" target="_top">
+            <div class="card-box4 animate__animated animate__fadeInUp">
+            <h1 class="card-title">Pride</h1>
+        </div></a>
+    </div>
+
+    <div class="card-img5">
+        <a href="./GPTW-6.html" class="card-link" target="_top">
+            <div class="card-box5 animate__animated animate__fadeInUp">
+            <h1 class="card-title">Camaraderie</h1>
+        </div></a>
+    </div>
+
+    </section>  
+
+</div>
+
+</body>
+</html>
